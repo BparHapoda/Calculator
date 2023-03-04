@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.layout.VBox?>
+
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.calculator.CalcController">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+
+    <VBox minHeight="600">
+        <TextArea fx:id="result" editable="false" maxHeight="40" VBox.vgrow="ALWAYS"
+                  style=" -fx-font-weight: bold;-fx-font-size: 30;">0.00
+        </TextArea>
+        <HBox VBox.vgrow="ALWAYS">
+            <Button fx:id="b7" text="7" onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="b8" text="8" onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="b9" text="9" onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="div" text="/" onAction="#input" style="-fx-font-weight: bold" HBox.hgrow="ALWAYS"
+                    VBox.vgrow="ALWAYS" maxHeight="400" maxWidth="400" mnemonicParsing="false">
+            </Button>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS">
+            <Button fx:id="b4" text="4" onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="b5" text="5" onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="b6" text="6" onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="mult" text="*" onAction="#input" style="-fx-font-weight: bold" HBox.hgrow="ALWAYS"
+                    VBox.vgrow="ALWAYS" maxHeight="400" maxWidth="400" mnemonicParsing="false">
+            </Button>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS">
+            <Button fx:id="b1" text="1" onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="b2" text="2" onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="b3" text="3" onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="minus" text="-" onAction="#input" style="-fx-font-weight: bold" HBox.hgrow="ALWAYS"
+                    VBox.vgrow="ALWAYS" maxHeight="400" maxWidth="400" mnemonicParsing="false">
+            </Button>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS">
+            <Button fx:id="clear" text="C" onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="b0" text="0" onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="point" text="." onAction="#input" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" maxHeight="400"
+                    maxWidth="400" mnemonicParsing="false">
+            </Button>
+            <Button fx:id="plus" text="+" onAction="#input" style="-fx-font-weight: bold" HBox.hgrow="ALWAYS"
+                    VBox.vgrow="ALWAYS" maxHeight="400" maxWidth="400" mnemonicParsing="false">
+            </Button>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS">
+            <Button fx:id="ravno" text="=" onAction="#input" style="-fx-font-weight: bold" HBox.hgrow="ALWAYS"
+                    VBox.vgrow="ALWAYS" maxHeight="400" maxWidth="4000" mnemonicParsing="false">
+            </Button>
+        </HBox>
+
+    </VBox>
+
+
+</VBox>
